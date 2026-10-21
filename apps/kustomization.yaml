@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - 05-routes
+  # - 00-network      # ← раскомментируем, когда добавим AdGuard
+  # - 10-security
+  # - 20-ai-control
+  # - 30-ai-agents
+  # - 40-ai-rag
+  # - 50-observability
+  # - 60-dashboard

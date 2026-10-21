@@ -1,0 +1,15 @@
+# бинарники и установщики
+argocd-linux-amd64
+get_helm.sh
+*.tgz
+*.tar.gz
+
+# локальные секреты (никогда не коммитим)
+*.env
+.env.*
+secrets.yaml
+!examples/*.yaml
+
+# IDE
+.vscode/
+.idea/
