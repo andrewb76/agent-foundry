@@ -9,7 +9,7 @@ spec:
   routes:
     # gRPC (argocd CLI) — приоритет выше, чтобы не перехватывался HTTP-роутом
     - kind: Rule
-      match: Host(`argocd.local`) && Header(`Content-Type`, `application/grpc`)
+      match: Host(`argocd.ai.local`) && Header(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: argocd-server
@@ -17,7 +17,7 @@ spec:
           scheme: h2c
     # HTTP (UI)
     - kind: Rule
-      match: Host(`argocd.local`)
+      match: Host(`argocd.ai.local`)
       priority: 10
       services:
         - name: argocd-server
